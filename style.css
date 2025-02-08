@@ -540,3 +540,105 @@ body {
 .testimony-author-occupation {
   text-transform: capitalize;
 }
+
+.blogs-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 30rem;
+  transition: all 0.5s;
+}
+
+.blog-featured-image-wrapper {
+  height: 25rem;
+}
+
+.blog-featured-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.blog-details {
+  position: relative;
+  padding-top: 6rem;
+}
+
+.blog-date {
+  --size: 10rem;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color-white-light);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.blog-card:hover .blog-date {
+  background-color: var(--color-secondary);
+}
+
+.blog-date--day {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: all 0.5s;
+}
+
+.blog-card:hover .blog-date--day {
+  color: var(--color-white);
+}
+
+.blog-date-month {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-black-dark);
+  transition: all 0.5s;
+}
+
+.blog-card:hover .blog-date-month {
+  color: var(--color-white);
+}
+
+.blog-date-year {
+  transition: all 0.5s;
+}
+
+.blog-card:hover .blog-date-year {
+  color: var(--color-white);
+}
+
+.blog-link {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+  color: var(--color-black-dark);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.5s;
+}
+
+.blog-card:hover .blog-link {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.blog-excerpt {
+  text-align: center;
+  font-family: var(--font-secondary);
+  line-height: 2;
+}
