@@ -414,6 +414,11 @@ body {
   background-color: var(--color-white-light);
   padding: 2rem;
   text-align: center;
+  transition: all 0.3s;
+}
+
+.book-card:hover .book-details {
+  background-color: var(--color-primary);
 }
 
 .book-price {
@@ -421,6 +426,11 @@ body {
   font-weight: 700;
   color: var(--color-secondary);
   margin-bottom: 1rem;
+  transition: all 0.5s ease;
+}
+
+.book-card:hover .book-price {
+  color: var(--color-white);
 }
 
 .book-title {
@@ -428,12 +438,22 @@ body {
   text-transform: capitalize;
   color: var(--color-black-dark);
   margin-bottom: 1rem;
+  transition: all 0.5s;
+}
+
+.book-card:hover .book-title {
+  color: var(--color-white);
 }
 
 .book-author {
   font-size: large;
   text-transform: capitalize;
   margin-bottom: 2rem;
+  transition: all 0.5s;
+}
+
+.book-card:hover .book-author {
+  color: var(--color-white);
 }
 
 .book-actions {
