@@ -339,3 +339,23 @@ body {
   line-height: 2;
   font-family: var(--font-secondary);
 }
+
+.stats {
+  background-color: var(--color-white-light);
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.stat-count {
+  font-size: 4rem;
+  color: var(--color-black-dark);
+  text-align: center;
+}
+
+.stat-description {
+  text-transform: uppercase;
+  text-align: center;
+}
