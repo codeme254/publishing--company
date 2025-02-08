@@ -21,7 +21,61 @@
     />
   </head>
   <body>
-    <h1>Publishing company</h1>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-contacts">
+          <a href="#" class="header-contact-link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="header-contact-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="header-contact-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="header-contact-link">
+            <i class="fa-brands fa-dribbble"></i>
+          </a>
+        </div>
+
+        <a href="#" class="header-logo">
+          <p class="header-logo-text-main">
+            <span>publishing</span> <span>company</span>
+          </p>
+          <p class="header-logo-text-sub">book publishing company</p>
+        </a>
+
+        <form action="" class="header-search-form">
+          <input
+            type="search"
+            placeholder="search"
+            class="header-search-input"
+          />
+          <button class="header-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="header-bottom">
+        <button id="toggle-menu-btn" class="toggle-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+          <span>menu</span>
+        </button>
+        <nav class="header-navigation" id="header-nav">
+          <ol class="header-navigation-list">
+            <li class="header-navigation-item"><a href="#">home</a></li>
+            <li class="header-navigation-item"><a href="#">about</a></li>
+            <li class="header-navigation-item"><a href="#">coming soon</a></li>
+            <li class="header-navigation-item"><a href="#">top seller</a></li>
+            <li class="header-navigation-item"><a href="#">books</a></li>
+            <li class="header-navigation-item"><a href="#">author</a></li>
+            <li class="header-navigation-item"><a href="#">blog</a></li>
+            <li class="header-navigation-item"><a href="#">contact</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
