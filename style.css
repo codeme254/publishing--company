@@ -31,6 +31,10 @@ body {
   color: var(--color-black-light);
 }
 
+.u-white {
+  color: white !important;
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -474,4 +478,65 @@ body {
   font-size: 2rem;
   background-color: var(--color-white);
   color: var(--color-black);
+}
+
+.testimonial-section {
+  margin-top: 10rem;
+  min-height: 40vh;
+  background: linear-gradient(
+      rgba(149, 173, 190, 0.7),
+      rgba(149, 173, 190, 0.7)
+    ),
+    url(./assets/images/customers.jpg);
+  background-position: top;
+  block-size: cover;
+  padding: 10rem 0;
+  margin-bottom: 10rem;
+}
+
+.testimonies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+
+.testimony-card {
+  width: min(35rem, 95vw);
+  background-color: var(--color-white);
+  padding: 2rem;
+  font-family: var(--font-secondary);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px var(--color-black-light);
+}
+
+.testimoy-text {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.testimony-author {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimony-author-avatar {
+  --size: 8rem;
+  /* display: block; */
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+}
+
+.testimony-author-name {
+  font-size: x-large;
+  text-transform: capitalize;
+  color: var(--color-black-dark);
+}
+
+.testimony-author-occupation {
+  text-transform: capitalize;
 }
