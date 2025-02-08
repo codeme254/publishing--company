@@ -31,6 +31,35 @@ body {
   color: var(--color-black-light);
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title--sub {
+  font-family: var(--font-secondary);
+  font-size: large;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.title--main {
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: var(--color-black-dark);
+}
+
+@media screen and (max-width: 25em) {
+  .title--main {
+    font-size: 5rem;
+  }
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -358,4 +387,8 @@ body {
 .stat-description {
   text-transform: uppercase;
   text-align: center;
+}
+
+.books-section {
+  margin-top: 10rem;
 }
