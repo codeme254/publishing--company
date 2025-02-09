@@ -8,6 +8,7 @@
   --color-white-light: #f5f4f0;
   --font-primary: "Lora", serif;
   --font-secondary: "Roboto", serif;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -228,6 +229,25 @@ body {
   .header-navigation-item a {
     color: var(--color-white);
   }
+}
+
+.scroll-to-top {
+  display: block;
+  --scroll-to-top-size: 5rem;
+  width: var(--scroll-to-top-size);
+  height: var(--scroll-to-top-size);
+  background-color: var(--color-secondary);
+  font-size: 3rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100000000;
 }
 
 .hero {

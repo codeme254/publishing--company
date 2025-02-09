@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-top">
         <div class="header-contacts">
           <a href="#" class="header-contact-link">
@@ -64,20 +64,28 @@
         </button>
         <nav class="header-navigation" id="header-nav">
           <ol class="header-navigation-list">
-            <li class="header-navigation-item"><a href="#">home</a></li>
-            <li class="header-navigation-item"><a href="#">about</a></li>
-            <li class="header-navigation-item"><a href="#">coming soon</a></li>
-            <li class="header-navigation-item"><a href="#">top seller</a></li>
-            <li class="header-navigation-item"><a href="#">books</a></li>
-            <li class="header-navigation-item"><a href="#">author</a></li>
-            <li class="header-navigation-item"><a href="#">blog</a></li>
-            <li class="header-navigation-item"><a href="#">contact</a></li>
+            <li class="header-navigation-item"><a href="#home">home</a></li>
+            <li class="header-navigation-item"><a href="#about">about</a></li>
+            <li class="header-navigation-item">
+              <a href="#new-releases">new releases</a>
+            </li>
+            <li class="header-navigation-item">
+              <a href="#testimonies">testimonies</a>
+            </li>
+            <li class="header-navigation-item"><a href="#blog">blog</a></li>
+            <!-- <li class="header-navigation-item"><a href="#books">books</a></li>
+            <li class="header-navigation-item"><a href="#authors">authors</a></li>
+            <li class="header-navigation-item"><a href="#contact">contact</a></li> -->
           </ol>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
+    <a href="#header" class="scroll-to-top">
+      <i class="fa-solid fa-up-long"></i>
+    </a>
+
+    <section class="hero" id="home">
       <div class="hero-textbox">
         <h2 class="hero-tagline-main">
           Good books don't give up all their secrets at once
@@ -158,7 +166,7 @@
       </div>
     </div>
 
-    <section class="books-section">
+    <section class="books-section" id="new-releases">
       <div class="title">
         <p class="title--sub">books</p>
         <h2 class="title--main">new releases</h2>
@@ -332,7 +340,7 @@
       </div>
     </section>
 
-    <section class="testimonial-section">
+    <section class="testimonial-section" id="testimonies">
       <div class="title">
         <p class="title--sub u-white">testimonial</p>
         <h2 class="title--main u-white">our clients love us</h2>
@@ -395,7 +403,7 @@
       </div>
     </section>
 
-    <section class="blog-section">
+    <section class="blog-section" id="blog">
       <div class="title">
         <p class="title--sub">blog</p>
         <h2 class="title--main">recent blogs</h2>
